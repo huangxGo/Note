@@ -51,4 +51,4 @@ Note: This paper has won the best student reward in ICCV2017.
 
 ### 5. Discussion
 ---
-One-stage detector中由于dense sampling导致了Foreground/Background类别不平衡的问题。作者认为这个类别不平衡的问题会导致简单样本在训练的过程中会主导loss，导致网络无法专注于困难样本的训练。因此，作者基于CE提出了Focal loss，简单的引入两个参数$\alpha$和$\gamma$，down-weighting负样本和简单样本的loss，缓解类别不平衡的问题，使得网络能够关注于困难样本的训练。实验结果显示这样简单的方法能够很好地提高One-stage detector的性能。
+One-stage detector中由于dense sampling导致了Foreground/Background类别不平衡的问题。作者认为这个类别不平衡的问题会导致简单样本在训练的过程中会主导loss，导致网络无法专注于困难样本的训练。因此，作者基于CE提出了Focal loss，简单的引入两个参数$\alpha$和$\gamma$，down-weighting负样本和简单样本的loss，缓解类别不平衡的问题，使得网络能够关注于困难样本的训练。实验结果显示这样简单的方法能够很好地提高One-stage detector的性能。1. **粗体**
